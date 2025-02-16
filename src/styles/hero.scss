@@ -38,9 +38,8 @@
     }
 
     .hero-logo {
-        position: absolute;
-        top: 200px; // Adjust as needed
-        right: 20px; // Adjust as needed
-        max-width: 10000px;
+        width: 300px;
+        height: auto;
+        object-fit: contain;
     }
 }   
