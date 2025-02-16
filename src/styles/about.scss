@@ -19,15 +19,36 @@
     }
   
     .skills {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-  
-      span {
-        padding: 0.5rem 1rem;
-        background: linear-gradient(135deg, #6e8efb, #c00b0b);
-        color: white;
-        border-radius: 5px;
-      }
-    }
-  }
+        display: flex;
+        
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0 auto;
+    
+        span {
+            background: linear-gradient(135deg, #6e8efb, #c00b0b);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            white-space: nowrap;
+            transition: transform 0.3s;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    
+        @media (max-width: 768px) {
+            gap: 0.5rem;
+            padding: 0.5rem;
+    
+            span {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    }}
